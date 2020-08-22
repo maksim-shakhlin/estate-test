@@ -1,0 +1,10 @@
+@import url(./page__header.css);
+@import url(./page__footer.css);
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: stretch;
+}

@@ -1,0 +1,5 @@
+.card__link-wrapper {
+  padding-top: 12px;
+  padding-bottom: 24px;
+  flex-grow: 10;
+}

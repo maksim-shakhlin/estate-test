@@ -1,0 +1,12 @@
+@import url(./variables.css);
+
+.root {
+  background-color: var(--pale-color);
+  color: var(--primary-color);
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

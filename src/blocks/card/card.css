@@ -1,0 +1,24 @@
+@import url(./card__section.css);
+@import url(./card__divider.css);
+@import url(./card__like-button.css);
+@import url(./card__like-button_liked.css);
+@import url(./card__link-wrapper.css);
+@import url(./card__tag.css);
+@import url(./card__tag_top.css);
+@import url(./card__text.css);
+@import url(./card__text_type_link.css);
+@import url(./card__title.css);
+@import url(./card__info.css);
+@import url(./card__top-block.css);
+
+.card {
+  background-color: #ffffff;
+  min-height: 320px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  transition: box-shadow 0.15s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}

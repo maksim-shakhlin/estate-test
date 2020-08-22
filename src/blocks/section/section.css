@@ -1,0 +1,6 @@
+@import url(./section__cap.css);
+@import url(./section__link.css);
+
+.section {
+  margin-bottom: 48px;
+}

@@ -1,0 +1,15 @@
+.card__text_type_link {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.1s linear;
+  border-bottom: var(--extralight-color) 1px solid;
+  display: inline;
+}
+
+.card__text_type_link:hover {
+  opacity: 0.6;
+}
+
+.link-wrapper:hover .card__text_type_link {
+  opacity: 0.6;
+}

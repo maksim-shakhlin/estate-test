@@ -1,0 +1,7 @@
+.card__top-block {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,5 @@
+.card__divider {
+  font-weight: 300;
+  margin: 0 8px;
+  color: var(--light-color);
+}
