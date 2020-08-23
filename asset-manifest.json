@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/estate-test/static/css/main.9487c55c.chunk.css",
-    "main.js": "/estate-test/static/js/main.f8592ac8.chunk.js",
-    "main.js.map": "/estate-test/static/js/main.f8592ac8.chunk.js.map",
+    "main.js": "/estate-test/static/js/main.cc678803.chunk.js",
+    "main.js.map": "/estate-test/static/js/main.cc678803.chunk.js.map",
     "runtime-main.js": "/estate-test/static/js/runtime-main.624087d4.js",
     "runtime-main.js.map": "/estate-test/static/js/runtime-main.624087d4.js.map",
     "static/js/2.24691089.chunk.js": "/estate-test/static/js/2.24691089.chunk.js",
     "static/js/2.24691089.chunk.js.map": "/estate-test/static/js/2.24691089.chunk.js.map",
     "index.html": "/estate-test/index.html",
-    "precache-manifest.a1557e67a28d069b381488a38cefdc00.js": "/estate-test/precache-manifest.a1557e67a28d069b381488a38cefdc00.js",
+    "precache-manifest.7fe2fed93acf3b38a1408e94301cb1db.js": "/estate-test/precache-manifest.7fe2fed93acf3b38a1408e94301cb1db.js",
     "service-worker.js": "/estate-test/service-worker.js",
     "static/css/main.9487c55c.chunk.css.map": "/estate-test/static/css/main.9487c55c.chunk.css.map",
     "static/js/2.24691089.chunk.js.LICENSE.txt": "/estate-test/static/js/2.24691089.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.624087d4.js",
     "static/js/2.24691089.chunk.js",
     "static/css/main.9487c55c.chunk.css",
-    "static/js/main.f8592ac8.chunk.js"
+    "static/js/main.cc678803.chunk.js"
   ]
 }
