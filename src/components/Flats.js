@@ -1,11 +1,25 @@
 import React from 'react';
 import Card from './Card';
-import { flats } from '../utils/utils';
+import CapPage from './CapPage';
+import api from '../utils/api';
+import { handleError } from '../utils/utils';
 
 function Flats() {
-  return (
-    <section className="cards section">
-      {flats ? (
+  const [flats, setFlats] = React.useState();
+
+  React.useEffect(() => {
+    api
+      .getFlats()
+      .then((data) => setFlats(data.response))
+      .catch((e) => {
+        handleError(e);
+        setFlats(0);
+      });
+  }, []);
+
+  if (flats) {
+    return (
+      <section className="cards section">
         <ul className="cards__list">
           {flats.map((flat) => (
             <li className="cards__list-item" key={flat.id}>
@@ -13,11 +27,23 @@ function Flats() {
             </li>
           ))}
         </ul>
-      ) : (
-        <h2 className="section__cap">Квартир нет :(</h2>
-      )}
-    </section>
-  );
+      </section>
+    );
+  }
+
+  if (Array.isArray(flats)) {
+    return <CapPage caption="Квартир нет :(" showLink={false} />;
+  }
+
+  if (flats === 0) {
+    return (
+      <CapPage caption="Что-то пошло не так :(" showLink={false}>
+        <p className="section__subtitle">Мы уже разбираемся.</p>
+      </CapPage>
+    );
+  }
+
+  return <CapPage caption="Грузятся" showLink={false} />;
 }
 
 export default Flats;

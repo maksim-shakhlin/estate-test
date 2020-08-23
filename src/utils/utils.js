@@ -99,3 +99,7 @@ export function getNameString(data) {
   data.last_name && res.push(data.last_name[0] + '.');
   return res.join(' ');
 }
+
+export function handleError(error) {
+  console.error(error);
+}

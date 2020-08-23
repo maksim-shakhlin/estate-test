@@ -3,7 +3,7 @@ import Flats from './Flats';
 import CapPage from './CapPage';
 import { Route, Switch } from 'react-router-dom';
 
-function Main({ cards }) {
+const Main = React.memo(() => {
   return (
     <main className="container">
       <Switch>
@@ -22,6 +22,6 @@ function Main({ cards }) {
       </Switch>
     </main>
   );
-}
+});
 
 export default Main;

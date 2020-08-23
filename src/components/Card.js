@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import BookmarkIcon from './BookmarkIcon';
 import { dict, getAddresString, getNameString } from '../utils/utils';
 import getWordForm from '../utils/morphology';
+import api from '../utils/api';
+import { handleError } from '../utils/utils';
 
 const Card = React.memo(
   ({
@@ -27,7 +29,15 @@ const Card = React.memo(
     const [isHovered, setIsHovered] = React.useState(false);
 
     function handleLikeClick() {
+      // optimistic ui
       setIsLiked(!isLiked);
+
+      api
+        .setFlatLikedStatus(id, !isLiked)
+        .then((data) => {
+          setIsLiked(data.response.liked);
+        })
+        .catch((e) => handleError(e));
     }
 
     function handleMouseOver() {
