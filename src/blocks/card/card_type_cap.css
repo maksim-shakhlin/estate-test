@@ -1,0 +1,13 @@
+.card_type_cap {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    ),
+    #fff url(../../images/card-cap.svg);
+
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(-1 * var(--card-width)) center, center;
+}

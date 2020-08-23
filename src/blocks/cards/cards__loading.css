@@ -1,0 +1,20 @@
+@keyframes swipe {
+  from {
+    background-position: calc(-1 * var(--card-width)) center, center;
+  }
+  to {
+    background-position: var(--card-width) center, center;
+  }
+}
+
+.cards__loading {
+  animation: swipe 1200ms linear normal infinite;
+}
+
+.cards__list-item:nth-of-type(2n) .cards__loading {
+  animation-delay: 400ms;
+}
+
+.cards__list-item:nth-of-type(3n) .cards__loading {
+  animation-delay: 800ms;
+}

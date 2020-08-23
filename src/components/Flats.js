@@ -43,7 +43,21 @@ function Flats() {
     );
   }
 
-  return <CapPage caption="Грузятся" showLink={false} />;
+  return (
+    <section className="cards section">
+      <ul className="cards__list">
+        <li className="cards__list-item">
+          <div className="card card_type_cap cards__loading" />
+        </li>
+        <li className="cards__list-item">
+          <div className="card card_type_cap cards__loading" />
+        </li>
+        <li className="cards__list-item">
+          <div className="card card_type_cap cards__loading" />
+        </li>
+      </ul>
+    </section>
+  );
 }
 
 export default Flats;
