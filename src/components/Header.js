@@ -4,7 +4,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 const HeaderInner = React.memo(() => {
   return (
     <div className="container">
-      <h1 className="header__title ">Квартиры в Тюмени</h1>
+      <h1 className="header__title ">Недвижимость в&nbsp;Тюмени</h1>
       <p className="header__subtitle">без комиссии Apple</p>
     </div>
   );

@@ -3,3 +3,21 @@
   font-size: 28px;
   margin: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .header__subtitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 683px) {
+  .header__subtitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__subtitle {
+    font-size: 18px;
+  }
+}

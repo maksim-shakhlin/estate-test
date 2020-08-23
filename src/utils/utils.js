@@ -1,5 +1,52 @@
 const flats = [
   {
+    type: 'house',
+    id: 12,
+    attributes: {
+      title: 'Купеческая усадьба шикарная, что глаз нельзя отвесть',
+      rooms: 6,
+      address: {
+        city: 'Tyumen',
+        street: 'Ленина',
+        house: '134',
+      },
+      area: 257,
+      unit: 'квм',
+    },
+    relationships: {
+      type: 'owner',
+      id: 44,
+      attributes: {
+        first_name: 'Степан',
+        last_name: 'Карачаев',
+        middle_name: 'Иванович',
+      },
+    },
+  },
+  {
+    type: 'studio',
+    id: 16,
+    attributes: {
+      title: 'Лофт',
+      rooms: 1,
+      address: {
+        city: 'Tyumen',
+        street: 'Ленина',
+        house: '134',
+        room: '24',
+      },
+      area: 134,
+      unit: 'квм',
+    },
+    relationships: {
+      type: 'agent',
+      id: 44,
+      attributes: {
+        first_name: 'Степан',
+      },
+    },
+  },
+  {
     type: 'flat',
     id: 1,
     attributes: {
@@ -77,7 +124,14 @@ const flats = [
 ];
 
 const dict = {
-  type: { flat: 'квартира', studio: 'студия', apartments: 'апартаменты' },
+  type: {
+    flat: 'квартира',
+    studio: 'студия',
+    apartments: 'апартаменты',
+    house: 'дом',
+    townhouse: 'таунхаус',
+    cottage: 'коттедж',
+  },
   agent: { agent: 'риелтор', owner: 'владелец' },
   unit: { квм: ['м', 2] },
 };

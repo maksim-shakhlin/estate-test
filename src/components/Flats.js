@@ -19,7 +19,7 @@ function Flats() {
 
   if (flats) {
     return (
-      <section className="cards section">
+      <section className="cards section page__section">
         <ul className="cards__list">
           {flats.map((flat) => (
             <li className="cards__list-item" key={flat.id}>
@@ -44,7 +44,7 @@ function Flats() {
   }
 
   return (
-    <section className="cards section">
+    <section className="cards section page__section">
       <ul className="cards__list">
         <li className="cards__list-item">
           <div className="card card_type_cap cards__loading" />

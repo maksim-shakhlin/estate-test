@@ -14,6 +14,12 @@
 
 @media screen and (max-width: 683px) {
   .container {
-    max-width: 300px;
+    max-width: calc(100% - 96px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    max-width: var(--card-width);
   }
 }

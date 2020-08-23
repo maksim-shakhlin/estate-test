@@ -5,3 +5,9 @@
   font-weight: 400;
   align-self: center;
 }
+
+@media screen and (max-width: 450px) {
+  .card__tag_top {
+    font-size: 18px;
+  }
+}

@@ -7,7 +7,14 @@
     ),
     #fff url(../../images/card-cap.svg);
 
-  background-size: cover, contain;
+  background-size: contain, var(--card-width) var(--card-min-height);
   background-repeat: no-repeat, no-repeat;
   background-position: calc(-1 * var(--card-width)) center, center;
+}
+
+@media screen and (max-width: 683px) {
+  .card_type_cap {
+    min-height: var(--cap-card-min-height);
+    background-size: contain, var(--card-width) var(--cap-card-min-height);
+  }
 }

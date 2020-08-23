@@ -1,14 +1,10 @@
 import { flats } from './utils';
 
 const response = {
-  200: { ok: true, status: 200, statusText: 'OK' },
-  201: { ok: true, status: 201, statusText: 'Created' },
-  204: { ok: true, status: 204, statusText: 'No content' },
-  400: {
-    ok: false,
-    status: 400,
-    statusText: 'Bad request',
-  },
+  status200: { ok: true, status: 200, statusText: 'OK' },
+  status201: { ok: true, status: 201, statusText: 'Created' },
+  status204: { ok: true, status: 204, statusText: 'No content' },
+  status400: { ok: false, status: 400, statusText: 'Bad request' },
 };
 
 const serverDelay = 1000;
@@ -41,17 +37,17 @@ export default function fetch(url, options) {
   switch (resource) {
     case 'flats': {
       if (attribute === undefined) {
-        result = new PseudoResponse(response[200], { response: flats });
+        result = new PseudoResponse(response.status200, { response: flats });
       }
 
       if (attribute === 'likes') {
         if (options.method === 'PUT') {
-          result = new PseudoResponse(response[201], {
+          result = new PseudoResponse(response.status201, {
             response: { id: id, liked: true },
           });
         }
         if (options.method === 'DELETE') {
-          result = new PseudoResponse(response[204], {
+          result = new PseudoResponse(response.status204, {
             response: { id: id, liked: false },
           });
         }
@@ -65,7 +61,7 @@ export default function fetch(url, options) {
   }
 
   if (!result) {
-    result = new PseudoResponse(response[400]);
+    result = new PseudoResponse(response.status400);
   }
 
   return new Promise((resolve) => {

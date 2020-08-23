@@ -1,5 +1,6 @@
 @import url(./page__header.css);
 @import url(./page__footer.css);
+@import url(./page__section.css);
 
 .page {
   min-height: 100vh;

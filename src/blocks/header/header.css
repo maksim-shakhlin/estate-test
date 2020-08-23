@@ -4,6 +4,19 @@
 .header {
   background-color: var(--primary-color);
   padding: 32px 0;
+  box-sizing: border-box;
   color: #fff;
   width: 100%;
+}
+
+@media screen and (max-width: 683px) {
+  .header {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 18px 0;
+  }
 }
